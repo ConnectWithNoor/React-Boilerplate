@@ -1,12 +1,26 @@
 import React from 'react';
+import { Register } from '../features';
 import RenderRoutes from './RenderRoutes';
 
 const ROUTES = [
-  { path: '/', key: 'ROOT', exact: true, component: () => <h1>Log in</h1> },
+  { path: '/', key: 'ROOT', exact: true, component: Register },
+  {
+    path: '/setpassword',
+    key: 'ROOT_SET_PASSWORD',
+    exact: true,
+    component: () => <h1>Set Password</h1>,
+  },
+  {
+    path: '/login',
+    key: 'ROOT_LOGIN',
+    exact: true,
+    component: () => <h1>Login</h1>,
+  },
   {
     path: '/app',
     key: 'APP',
     component: RenderRoutes,
+    // nested routes
     routes: [
       {
         path: '/app',

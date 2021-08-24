@@ -4,11 +4,7 @@ import ROUTES from './router/routes-config';
 import RenderRoutes from './router/RenderRoutes';
 
 function App() {
-  return (
-    <>
-      <RenderRoutes routes={ROUTES} />
-    </>
-  );
+  return <div>{/* Layout here */}</div>;
 }
 
 export default App;

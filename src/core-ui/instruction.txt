@@ -1,0 +1,7 @@
+This folder "core-ui" contain the components that don't re-render in a given sequence/pattern.
+
+Examples: 
+1 - The Header of the application 
+2 - The Sidebar of an Admin Panel
+
+(Both of them remains the same through out the application)
